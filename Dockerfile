@@ -7,3 +7,6 @@ RUN npm install -g phantomjs
 
 RUN mkdir /myapp
 
+ONBUILD ADD . /myapp
+ONBUILD WORKDIR /myapp
+ONBUILD RUN bundle install

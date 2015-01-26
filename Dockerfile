@@ -1,4 +1,4 @@
-FROM ruby:2.1.3
+FROM ruby:2.1.5
 RUN apt-get update -qq \
     && apt-get install -y build-essential libpq-dev nodejs npm exuberant-ctags \
     && ln -s /usr/bin/nodejs /usr/bin/node
